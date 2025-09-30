@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -109,10 +109,19 @@ namespace _20250929_MACHINE_PROBLEM
         {
             string message = GetMessage();
             char[] characters = AssignChars();
-
+            Console.Write("KEY: ");
             foreach (char letter in message)
             {
-                if (!characters.Contains(letter))
+                if (characters.Contains(letter))
+                {
+                  for (int counter = 0, counter < characters.Length, counter++)
+                  {
+                     if (characters[counter] == letter)
+                     {
+                        Console.Write($"        {key[counter]}");
+                     }
+                  }
+                }
             }
         }
 
