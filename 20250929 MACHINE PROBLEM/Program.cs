@@ -119,7 +119,8 @@ namespace _20250929_MACHINE_PROBLEM
                   {
                      if (characters[counter] == letter)
                      {
-                        Console.Write($"        {key[counter]}");
+                        Console.Write(key[counter]);
+                        break;
                      }
                   }
                 }
