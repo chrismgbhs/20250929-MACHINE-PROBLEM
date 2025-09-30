@@ -129,7 +129,7 @@ namespace _20250929_MACHINE_PROBLEM
 
         static void Decode(char[] key)
         {
-            string message = GetMessage();
+            string keyCode = GetKey();
         }
 
         static string GetMessage()
@@ -137,6 +137,14 @@ namespace _20250929_MACHINE_PROBLEM
             string message;
             Console.Write("Enter your message: ");
             message = Console.ReadLine();
+            return message.ToUpper();
+        }
+
+        static string GetKey()
+        {
+            string keyCode;
+            Console.Write("Enter your key code: ");
+            keyCode = Console.ReadLine();
             return message.ToUpper();
         }
 
