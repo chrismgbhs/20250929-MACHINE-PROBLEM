@@ -11,7 +11,8 @@ namespace _20250929_MACHINE_PROBLEM
     {
         static void Main(string[] args)
         {
-            char[] key = AssignPassPhrase(GetPassPhrase(), AssignChars());
+            char[] characters = AssignChars();
+            char[] key = AssignPassPhrase(GetPassPhrase(), characters);
             RunProgram(DetermineMode(), key);
             Console.WriteLine();
             Console.ReadKey();
