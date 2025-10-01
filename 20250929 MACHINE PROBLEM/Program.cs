@@ -9,6 +9,10 @@ namespace _20250929_MACHINE_PROBLEM
 {
     internal class Program
     {
+        /// <summary>
+        /// This method is the starting point of the program where the sequence of methods is being laid out.
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
             char[] characters = AssignChars();
@@ -145,6 +149,12 @@ namespace _20250929_MACHINE_PROBLEM
             //CheckAllArrays(characters, key);
         }
 
+        /// <summary>
+        /// This method outputs the encoded message as key.
+        /// </summary>
+        /// <param name="key"></param>
+        /// <param name="characters"></param>
+        /// <param name="message"></param>
         static void OutputKey(char[] key, char[] characters, string message)
         {
             Console.Write("KEY: ");
@@ -180,6 +190,12 @@ namespace _20250929_MACHINE_PROBLEM
             //CheckAllArrays(characters, key);
         }
 
+        /// <summary>
+        /// This method outputs the decoded message.
+        /// </summary>
+        /// <param name="key"></param>
+        /// <param name="characters"></param>
+        /// <param name="keyCode"></param>
         static void OutputMessage(char[] key, char[] characters, string keyCode)
         {
             foreach (char letter in keyCode)
